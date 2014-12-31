@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-#   MYAPP : SOME_DESCRIPTION
-#   Copyright (C) 2014 mete0r <mete0r@sarangbang.or.kr>
+#   mete0r.gpl : Manage GPLed source codes
+#   Copyright (C) 2015 mete0r <mete0r@sarangbang.or.kr>
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU Affero General Public License as published by
@@ -64,27 +64,25 @@ def readfile(path):
 
 
 setup_info = {
-    'name': 'MYAPP',
+    'name': 'mete0r.gpl',
     'version': readfile('VERSION.txt').strip(),
-    'description': 'SOME_DESCRIPTION',
-    'long_description': readfile('README.rst'),
+    'description': 'Manage GPL\'ed source code files',
+    'long_description': readfile('README.rst') + readfile('CHANGES.rst'),
 
     'author': 'mete0r',
     'author_email': 'mete0r@sarangbang.or.kr',
     'license': 'GNU Affero General Public License v3 or later (AGPLv3+)',
-    # 'url': 'https://github.com/mete0r/MYAPP',
+    'url': 'https://github.com/mete0r/gpl',
 
     'packages': [
-        'MYAPP'
+        'mete0r_gpl'
     ],
     'package_dir': {'': '.'},
     'install_requires': [
+        'docopt',
     ],
     'entry_points': {
-        'console_scripts': ['MYAPP = MYAPP.cli:main'],
-        'zc.buildout': ['default = MYAPP.recipe:Recipe'],
-        'zc.buildout.uninstall': ['default = MYAPP.recipe:uninstall'],
-        'paste.app_factory': ['main = MYAPP.wsgi:app_factory'],
+        'console_scripts': ['gpl = mete0r_gpl.cli:main'],
     }
 }
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-#   MYAPP : SOME_DESCRIPTION
-#   Copyright (C) 2014 mete0r <mete0r@sarangbang.or.kr>
+#   mete0r.gpl : Manage GPL'ed source code files
+#   Copyright (C) 2015 mete0r <mete0r@sarangbang.or.kr>
 #
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU Affero General Public License as published by
@@ -16,8 +16,3 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-from .cli import main
-
-
-if __name__ == '__main__':
-    main()
