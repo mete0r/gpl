@@ -1,7 +1,7 @@
 CHANGES
 =======
 
-0.1.0 (unreleased)
+0.1.0 (2015-01-01)
 ------------------
 
 * Initial release.
